@@ -1,5 +1,5 @@
 var goToEl = function (ele) {
-  var scrollTop = $(ele).position().top - 50;
+  var scrollTop = $(ele).position().top - 70;
   $('html, body').animate({
     scrollTop: scrollTop + 'px'
   }, 1000);
@@ -31,4 +31,6 @@ $(document).ready(function () {
   $('.collapsible').collapsible({
     accordion : false
   });
+
+  $('.modal-trigger').leanModal();
 });

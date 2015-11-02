@@ -8,7 +8,17 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #888;
+}
+
+nav ul a {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  &:hover, &:focus, &:active {
+    color: #FFF;
+    background-color: #ffa726;
+  }
 }
 
 p {
@@ -45,33 +55,77 @@ p {
   }
 }
 
+.head-banner {
+  padding: 10px;
+  margin-top: 400px;
+  opacity: 0.9;
+  &.head-title {
+    margin-top: 10px;
+    padding: 0;
+  }
+  p {
+    font-weight: 200;
+    font-size: 16px;
+    margin: 10px;
+    &.header {
+      font-size: 36px;
+      font-weight: 100;
+    }
+    &.hover-heading {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.head-title {
+  padding: 10px;
+  margin-top: 400px;
+  opacity: 0.9;
+  &.head-title {
+    margin-top: 10px;
+    padding: 0;
+  }
+  div {
+    font-weight: 200;
+    font-size: 16px;
+    &.header {
+      padding: 10px;
+      font-size: 36px;
+      font-weight: 100;
+      border-left: 1px solid #ECECEC;
+      &.right-align {
+        border-left: none;
+        border-right: 1px solid #ECECEC;
+      }
+    }
+    &.hover-heading {
+      padding: 10px;
+      width: 100%;
+      i {
+        vertical-align: bottom;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.page-title {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.text-running {
+  font-weight: 200;
+  font-size: 16px;
+}
+
 .vision-text {
   line-height: 2;
 }
 
 .parallax img {
   width: 100%;
-}
-
-.head-title, .head-vision {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  opacity: 0.8;
-}
-
-.head-title {
-  margin-top: 150px;
-}
-
-.head-vision {
-  width: 70%;
-}
-
-.hover-heading {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .hover-text {
@@ -82,4 +136,17 @@ p {
 
 .dropdown-content#aboutDropDown {
   width: 200px !important;
+  a {
+    font-size: 12px;
+    color: #888;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.team {
+  .col {
+    clear: right;
+  }
 }
