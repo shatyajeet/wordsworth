@@ -22,6 +22,10 @@ router.get('/model', function (req, res, next) {
   res.render('model', { title: 'Our operating model' });
 });
 
+router.get('/updates', function (req, res, next) {
+  res.render('updates', { title: 'Updates' });
+});
+
 router.get('/team', function (req, res, next) {
   res.render('team', { title: 'Our team' });
 });
