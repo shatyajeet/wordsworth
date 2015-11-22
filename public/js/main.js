@@ -6,6 +6,9 @@ var goToEl = function (ele) {
 };
 
 $(document).ready(function () {
+  if (window.location.pathname === '/') {
+    $('#show-intern-modal').openModal();
+  }
   setTimeout(function () {
     $('.parallax').parallax();
   }, 100);
