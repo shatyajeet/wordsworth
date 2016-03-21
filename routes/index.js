@@ -26,6 +26,10 @@ router.get('/updates', function (req, res, next) {
   res.render('updates', { title: 'Updates' });
 });
 
+router.get('/gallery', function (req, res, next) {
+  res.render('gallery', { title: 'Gallery' });
+});
+
 router.get('/team', function (req, res, next) {
   res.render('team', { title: 'Our team' });
 });
