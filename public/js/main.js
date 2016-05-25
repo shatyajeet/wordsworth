@@ -31,6 +31,8 @@ $(document).ready(function () {
   $('.collapsible').collapsible({
     accordion : false
   });
-
-  $('.modal-trigger').leanModal();
+  
+  if ($('#summer-internship-modal').length) {
+    $('#summer-internship-modal').openModal();
+  }
 });
