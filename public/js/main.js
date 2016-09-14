@@ -10,6 +10,8 @@ $(document).ready(function () {
     $('.parallax').parallax();
   }, 100);
 
+  $('.modal-trigger').leanModal();
+
   $('body').on('click', '.hover-heading', function (e) {
     var text = $(e.currentTarget).siblings('.hover-text');
     if (text.hasClass('in')) {
